@@ -1,0 +1,12 @@
+select IMG_name into outfile '/tmp/query.csv'
+fields terminated by ','
+enclosed by '"'
+escaped by '\\'
+lines terminated by '\n'
+from xgadata where IMG_no <= 15;
+
+
+
+
+file reduction in /tmp folder
+- sudo rm /tmp/query.csv
